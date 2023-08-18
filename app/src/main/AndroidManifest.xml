@@ -13,6 +13,42 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".OstomiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AltaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostoperatorioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IngresoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PreparacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnestesiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RectoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ColonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SueloActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProctologiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CancerActivity"
+            android:exported="false" />
+        <activity
             android:name=".HeaderActivity2"
             android:exported="false" />
         <activity

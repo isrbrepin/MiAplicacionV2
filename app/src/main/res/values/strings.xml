@@ -15,4 +15,10 @@
     <string name="text_ingreso">El día del ingreso</string>
     <string name="text_hospital">En el Hospital</string>
     <string name="text_atras">Volver atrás</string>
+    <string name="text_colon">Colon</string>
+    <string name="text_info_colon">Información sobre colon</string>
+    <string name="text_recto">Recto</string>
+    <string name="text_info_recto">Información sobre recto</string>
+    <string name="text_alta">Al Alta</string>
+    <string name="text_ostomia">Ostomia</string>
 </resources>

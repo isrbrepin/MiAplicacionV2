@@ -65,6 +65,8 @@
         android:text="@string/text_postoperatorio"
         android:textAlignment="center"
         android:textSize="25sp"
+        android:clickable="true"
+        android:onClick="openPostoperatorioActivity"
         android:textStyle="bold" />
 
 </LinearLayout>
