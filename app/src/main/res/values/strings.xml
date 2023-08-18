@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MyAppTFG</string>
+    <string name="text_logo_app">Logo_App</string>
+    <string name="text_help">AYUDA</string>
+    <string name="text_info_proceso">Información del proceso</string>
+    <string name="text_preoperatorio">Preoperatorio.\nAntes de la cirugía.</string>
+    <string name="text_preoperatorio2">Preoperatorio - Antes de la cirugía</string>
+    <string name="text_postoperatorio">Postoperatorio.\nTras la cirugía.</string>
+    <string name="text_postoperatorio2">Postoperatorio - Tras la cirugía</string>
+    <string name="text_cancer">Cáncer colorrectal</string>
+    <string name="text_proctologia">Proctología</string>
+    <string name="text_suelo">Suelo pélvico</string>
+    <string name="text_anestesia">Anestesia</string>
+    <string name="text_preparacion">¿Cómo me debo preparar?</string>
+    <string name="text_ingreso">El día del ingreso</string>
+    <string name="text_hospital">En el Hospital</string>
+    <string name="text_atras">Volver atrás</string>
+</resources>
