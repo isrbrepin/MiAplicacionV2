@@ -1,0 +1,11 @@
+<!-- activity_header.xml -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Header2Layout"
+    android:layout_width="332dp"
+    android:layout_height="126dp"
+    android:layout_gravity="center|top"
+    android:layout_marginTop="60dp"
+    android:background="@drawable/help2_drawable"
+    android:orientation="horizontal">
+</FrameLayout>

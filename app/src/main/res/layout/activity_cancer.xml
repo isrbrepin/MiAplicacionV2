@@ -9,7 +9,7 @@
     android:orientation="vertical">
 
     <!-- Incluir el header reutilizable -->
-    <include layout="@layout/activity_header2" />
+    <include layout="@layout/activity_header" />
 
 
     <TextView
@@ -44,6 +44,7 @@
         android:elevation="12dp"
         android:clickable="true"
         android:onClick="openColonActivity"
+        android:textColor="#000000"
         android:textStyle="bold" />
 
 

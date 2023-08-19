@@ -29,6 +29,7 @@
         android:elevation="12dp"
         android:clickable="true"
         android:onClick="openInfoActivity"
+        android:textColor="#000000"
         android:textStyle="bold" />
 
 
@@ -48,6 +49,7 @@
         android:textSize="25sp"
         android:clickable="true"
         android:onClick="openPreoperatorioActivity"
+        android:textColor="#000000"
         android:textStyle="bold" />
 
 
@@ -67,6 +69,7 @@
         android:textSize="25sp"
         android:clickable="true"
         android:onClick="openPostoperatorioActivity"
+        android:textColor="#000000"
         android:textStyle="bold" />
 
 </LinearLayout>

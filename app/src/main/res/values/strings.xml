@@ -21,4 +21,6 @@
     <string name="text_info_recto">Información sobre recto</string>
     <string name="text_alta">Al Alta</string>
     <string name="text_ostomia">Ostomia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

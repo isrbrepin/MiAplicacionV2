@@ -9,7 +9,7 @@
     android:orientation="vertical">
 
   <!-- Incluir el header reutilizable -->
-  <include layout="@layout/activity_header2" />
+  <include layout="@layout/activity_header" />
 
 
   <TextView
@@ -44,6 +44,7 @@
       android:elevation="12dp"
       android:clickable="true"
       android:onClick="openCancerActivity"
+      android:textColor="#000000"
       android:textStyle="bold" />
 
 
@@ -63,6 +64,7 @@
       android:textSize="25sp"
       android:clickable="true"
       android:onClick="openProctologiaActivity"
+      android:textColor="#000000"
       android:textStyle="bold" />
 
 
@@ -82,6 +84,7 @@
       android:textSize="25sp"
       android:clickable="true"
       android:onClick="openSueloActivity"
+      android:textColor="#000000"
       android:textStyle="bold" />
 
 </LinearLayout>
