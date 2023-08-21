@@ -28,4 +28,8 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, PostoperatorioActivity::class.java)
         startActivity(intent)
     }
+    fun openHelpActivity(view: View) {
+        val intent = Intent(this, HelpActivity::class.java)
+        startActivity(intent)
+    }
 }

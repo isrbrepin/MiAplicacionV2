@@ -18,4 +18,8 @@ class CancerActivity : AppCompatActivity() {
         val intent = Intent(this, RectoActivity::class.java)
         startActivity(intent)
     }
+    fun openHelpActivity(view: View) {
+        val intent = Intent(this, HelpActivity::class.java)
+        startActivity(intent)
+    }
 }

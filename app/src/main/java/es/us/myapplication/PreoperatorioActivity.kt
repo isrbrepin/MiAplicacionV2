@@ -26,4 +26,8 @@ class PreoperatorioActivity : AppCompatActivity() {
         val intent = Intent(this, HospitalActivity::class.java)
         startActivity(intent)
     }
+    fun openHelpActivity(view: View) {
+        val intent = Intent(this, HelpActivity::class.java)
+        startActivity(intent)
+    }
 }

@@ -1,11 +1,27 @@
 <!-- activity_header.xml -->
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Header2Layout"
     android:layout_width="332dp"
     android:layout_height="126dp"
     android:layout_gravity="center|top"
     android:layout_marginTop="60dp"
-    android:background="@drawable/help2_drawable"
     android:orientation="horizontal">
-</FrameLayout>
+
+
+    <TextView
+        android:id="@+id/text_help2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/text_help"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/help2_drawable"/>
+
+
+
+</LinearLayout>

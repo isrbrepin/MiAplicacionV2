@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class SueloActivity : AppCompatActivity() {
+class CabeceraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_suelo)
+        setContentView(R.layout.activity_cabecera)
     }
     fun openHelpActivity(view: View) {
         val intent = Intent(this, HelpActivity::class.java)

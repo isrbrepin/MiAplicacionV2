@@ -13,4 +13,5 @@ class HelpFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_help, container, false)
     }
+
 }

@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- fragment_help.xml -->
-
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/overlay_container"
-    android:layout_width="332dp"
-    android:layout_height="126dp"
-    android:layout_gravity="center|top"
-    android:layout_marginTop="60dp"
-    android:background="@drawable/help2_drawable"
-    android:orientation="horizontal">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Aquí puedes agregar el contenido de tu superposición de ayuda -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esta es la superposición de ayuda"
+        android:textSize="18sp"
+        android:layout_gravity="center" />
+
+    <!-- Puedes agregar más elementos, como botones, imágenes, etc., para tu overlay -->
+
 </FrameLayout>
