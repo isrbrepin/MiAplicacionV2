@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingStart="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="@string/tittle_ayuda"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A9AC00"/>
+
+    <!-- ... Otras vistas de contenido, como los TextViews para título y mensaje ... -->
+    <TextView
+        android:id="@+id/dialogHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:paddingStart="10dp"
+        android:textColor="#000000"
+        android:text="@string/text_info_contacto"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/dialogCloseHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="@string/text_cerrar"
+        android:textColor="#7D000000"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+</LinearLayout>

@@ -23,4 +23,15 @@
     <string name="text_ostomia">Ostomia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_start_game">Contacto</string>
+    <string name="start">Start\n</string>
+    <string name="cancel">end\n</string>
+    <string name="tittle_ayuda">Contacte con su médico</string>
+    <string name="text_info_contacto">Teléfono: XXX XXX XXX \nEmail: aaaaaaaaaaa@gmail.com</string>
+    <string name="text_cerrar">(Pulse fuera de la pantalla para cerrar)</string>
+    <string name="text_comenzar">PULSE AQUÍ PARA COMENZAR</string>
+    <string name="text_tittle_instrucciones">Instrucciones de uso de la aplicación</string>
+    <string name="text_instrucciones">\n1. Pulse en “pulse aquí para comenzar”\n\n2. Una vez presione, seleccione el tipo de intervención/proceso/patología que le hayan explicado en la consulta\n\n3. Una vez dentro encontrará la informacion necesaria para el proceso, preoperatorio y postoperatorio\n\n4. ----------\n\n5. ----------\n\n6. ------------
+    </string>
+
 </resources>
