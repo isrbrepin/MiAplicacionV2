@@ -9,10 +9,10 @@ import android.view.WindowManager
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 
-class SecondActivity : AppCompatActivity() {
+class PatologiaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second)
+        setContentView(R.layout.activity_patologia)
 
         val btnOpenOverlay: Button = findViewById(R.id.btn_open_overlay)
 
@@ -39,17 +39,20 @@ class SecondActivity : AppCompatActivity() {
         val scale = resources.displayMetrics.density
         return (this * scale + 0.5f).toInt()
     }
-
-    fun openInfoActivity(view: View) {
-        val intent = Intent(this, InfoActivity::class.java)
+    fun openAbdomenActivity(view: View) {
+        val intent = Intent(this, AbdomenActivity::class.java)
         startActivity(intent)
     }
-    fun openPreoperatorioActivity(view: View) {
-        val intent = Intent(this, PreoperatorioActivity::class.java)
+    fun openProctologiaActivity(view: View) {
+        val intent = Intent(this, ProctologiaActivity::class.java)
         startActivity(intent)
     }
-    fun openPostoperatorioActivity(view: View) {
-        val intent = Intent(this, PostoperatorioActivity::class.java)
+    fun openSueloActivity(view: View) {
+        val intent = Intent(this, SueloActivity::class.java)
+        startActivity(intent)
+    }
+    fun openHelpActivity(view: View) {
+        val intent = Intent(this, HelpActivity::class.java)
         startActivity(intent)
     }
 }

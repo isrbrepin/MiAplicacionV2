@@ -15,11 +15,10 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 
-class SueloActivity : AppCompatActivity() {
+class TransitoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_suelo)
-
+        setContentView(R.layout.activity_transito)
         val btnOpenOverlay: Button = findViewById(R.id.btn_open_overlay)
 
         btnOpenOverlay.setOnClickListener {
@@ -40,8 +39,8 @@ class SueloActivity : AppCompatActivity() {
 
         }
 
-        val textInfo = findViewById<TextView>(R.id.text_suelo)
-        val fullText = getString(R.string.text_suelo)
+        val textInfo = findViewById<TextView>(R.id.text_info)
+        val fullText = getString(R.string.reconstrucci_n_del_tr_nsito)
 
         // Crear el texto con diferentes partes clicables
         val spannableString = SpannableString(fullText)
@@ -49,7 +48,20 @@ class SueloActivity : AppCompatActivity() {
         // Definir los clics y sus comportamientos
         val patologiaClick = object : ClickableSpan() {
             override fun onClick(widget: View) {
-                val intent = Intent(this@SueloActivity, PatologiaActivity::class.java)
+                val intent = Intent(this@TransitoActivity, PatologiaActivity::class.java)
+                startActivity(intent)
+            }
+
+            override fun updateDrawState(ds: TextPaint) {
+                super.updateDrawState(ds)
+                ds.isUnderlineText = false
+                ds.color = Color.parseColor("#005B14")
+            }
+        }
+
+        val cirugiaClick = object : ClickableSpan() {
+            override fun onClick(widget: View) {
+                val intent = Intent(this@TransitoActivity, AbdomenActivity::class.java)
                 startActivity(intent)
             }
 
@@ -61,9 +73,9 @@ class SueloActivity : AppCompatActivity() {
         }
 
 
-
         // Asignar los clics a las partes correspondientes del texto
         spannableString.setSpan(patologiaClick, 0, 18, 0)
+        spannableString.setSpan(cirugiaClick, 21, 38, 0)
 
         // Asignar el SpannableString al TextView
         textInfo.text = spannableString
@@ -73,9 +85,5 @@ class SueloActivity : AppCompatActivity() {
     private fun Int.dpToPx(): Int {
         val scale = resources.displayMetrics.density
         return (this * scale + 0.5f).toInt()
-    }
-    fun openHelpActivity(view: View) {
-        val intent = Intent(this, HelpActivity::class.java)
-        startActivity(intent)
     }
 }

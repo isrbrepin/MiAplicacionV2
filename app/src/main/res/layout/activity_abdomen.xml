@@ -1,55 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="0dp"
     android:layout_marginVertical="0dp"
     android:background="#D7FACB"
-    tools:context=".MainActivity"
     android:orientation="vertical">
 
     <!-- Incluir el header reutilizable -->
     <include layout="@layout/activity_header" />
 
-
+    <!-- Resto del contenido -->
     <TextView
-        android:id="@+id/text_preoperatorio2"
+        android:id="@+id/text_abdomen"
         android:layout_width="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
         android:elevation="20dp"
         android:background="@drawable/pagactual_drawable"
-        android:layout_height="65dp"
-        android:text="@string/text_preoperatorio2"
+        android:layout_height="60dp"
+        android:text="@string/text_abdominal"
         android:textAlignment="center"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textColor="#005B14"
         android:textStyle="bold" />
 
-    <!-- Resto del contenido -->
-
     <TextView
-        android:id="@+id/text_anestesia"
+        android:id="@+id/text_polipos"
         android:gravity="center"
-        android:text="@string/text_anestesia"
+        android:text="@string/polipos_colorrectales"
         android:background="@drawable/body_drawable"
         android:textAlignment="center"
         android:textSize="25sp"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="120dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
         android:elevation="12dp"
         android:clickable="true"
-        android:onClick="openAnestesiaActivity"
+        android:onClick="openCancerActivity"
         android:textColor="#000000"
         android:textStyle="bold" />
 
 
     <TextView
-        android:id="@+id/text_preparacion"
+        android:id="@+id/text_transito"
         android:layout_width="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
@@ -58,18 +55,18 @@
         android:layout_marginStart="15dp"
         android:elevation="12dp"
         android:background="@drawable/body_drawable"
-        android:layout_height="90dp"
-        android:text="@string/text_preparacion"
+        android:layout_height="120dp"
+        android:text="@string/transito"
         android:textAlignment="center"
         android:textSize="25sp"
         android:clickable="true"
-        android:onClick="openPreparacionActivity"
+        android:onClick="openTransitoActivity"
         android:textColor="#000000"
         android:textStyle="bold" />
 
 
     <TextView
-        android:id="@+id/text_ingreso"
+        android:id="@+id/text_inflamatoria"
         android:layout_width="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
@@ -78,32 +75,12 @@
         android:layout_marginStart="15dp"
         android:elevation="12dp"
         android:background="@drawable/body_drawable"
-        android:layout_height="90dp"
-        android:text="@string/text_ingreso"
+        android:layout_height="120dp"
+        android:text="@string/inflamatoria"
         android:textAlignment="center"
         android:textSize="25sp"
         android:clickable="true"
-        android:onClick="openIngresoActivity"
-        android:textColor="#000000"
-
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/text_hospital"
-        android:layout_width="match_parent"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginStart="15dp"
-        android:elevation="12dp"
-        android:background="@drawable/body_drawable"
-        android:layout_height="90dp"
-        android:text="@string/text_hospital"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:clickable="true"
-        android:onClick="openHospitalActivity"
+        android:onClick="openInflamatoriaActivity"
         android:textColor="#000000"
         android:textStyle="bold" />
 

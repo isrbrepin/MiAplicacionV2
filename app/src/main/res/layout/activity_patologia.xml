@@ -1,11 +1,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="0dp"
     android:layout_marginVertical="0dp"
     android:background="#D7FACB"
-    tools:context=".MainActivity"
     android:orientation="vertical">
 
   <!-- Incluir el header reutilizable -->
@@ -20,7 +18,7 @@
       android:elevation="20dp"
       android:background="@drawable/pagactual_drawable"
       android:layout_height="60dp"
-      android:text="@string/text_info_proceso"
+      android:text="@string/text_patologia"
       android:textAlignment="center"
       android:textSize="22sp"
       android:textColor="#005B14"
@@ -31,7 +29,7 @@
   <TextView
       android:id="@+id/text_cancer"
       android:gravity="center"
-      android:text="@string/text_cancer"
+      android:text="@string/abdominal"
       android:background="@drawable/body_drawable"
       android:textAlignment="center"
       android:textSize="25sp"
@@ -43,7 +41,7 @@
       android:layout_marginStart="15dp"
       android:elevation="12dp"
       android:clickable="true"
-      android:onClick="openCancerActivity"
+      android:onClick="openAbdomenActivity"
       android:textColor="#000000"
       android:textStyle="bold" />
 
@@ -59,7 +57,7 @@
       android:elevation="12dp"
       android:background="@drawable/body_drawable"
       android:layout_height="120dp"
-      android:text="@string/text_proctologia"
+      android:text="@string/procto"
       android:textAlignment="center"
       android:textSize="25sp"
       android:clickable="true"
@@ -79,7 +77,7 @@
       android:elevation="12dp"
       android:background="@drawable/body_drawable"
       android:layout_height="120dp"
-      android:text="@string/text_suelo"
+      android:text="@string/suelo"
       android:textAlignment="center"
       android:textSize="25sp"
       android:clickable="true"

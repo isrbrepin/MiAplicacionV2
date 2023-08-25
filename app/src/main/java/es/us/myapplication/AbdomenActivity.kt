@@ -15,11 +15,10 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 
-class SueloActivity : AppCompatActivity() {
+class AbdomenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_suelo)
-
+        setContentView(R.layout.activity_abdomen)
         val btnOpenOverlay: Button = findViewById(R.id.btn_open_overlay)
 
         btnOpenOverlay.setOnClickListener {
@@ -40,8 +39,8 @@ class SueloActivity : AppCompatActivity() {
 
         }
 
-        val textInfo = findViewById<TextView>(R.id.text_suelo)
-        val fullText = getString(R.string.text_suelo)
+        val textInfo = findViewById<TextView>(R.id.text_abdomen)
+        val fullText = getString(R.string.text_abdominal)
 
         // Crear el texto con diferentes partes clicables
         val spannableString = SpannableString(fullText)
@@ -49,7 +48,7 @@ class SueloActivity : AppCompatActivity() {
         // Definir los clics y sus comportamientos
         val patologiaClick = object : ClickableSpan() {
             override fun onClick(widget: View) {
-                val intent = Intent(this@SueloActivity, PatologiaActivity::class.java)
+                val intent = Intent(this@AbdomenActivity, PatologiaActivity::class.java)
                 startActivity(intent)
             }
 
@@ -69,13 +68,22 @@ class SueloActivity : AppCompatActivity() {
         textInfo.text = spannableString
         textInfo.movementMethod = LinkMovementMethod.getInstance()
 
+
     }
     private fun Int.dpToPx(): Int {
         val scale = resources.displayMetrics.density
         return (this * scale + 0.5f).toInt()
     }
-    fun openHelpActivity(view: View) {
-        val intent = Intent(this, HelpActivity::class.java)
+    fun openCancerActivity(view: View) {
+        val intent = Intent(this, CancerActivity::class.java)
+        startActivity(intent)
+    }
+    fun openTransitoActivity(view: View) {
+        val intent = Intent(this, TransitoActivity::class.java)
+        startActivity(intent)
+    }
+    fun openInflamatoriaActivity(view: View) {
+        val intent = Intent(this, InflamatoriaActivity::class.java)
         startActivity(intent)
     }
 }

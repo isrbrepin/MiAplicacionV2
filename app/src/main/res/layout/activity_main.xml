@@ -11,14 +11,13 @@
 
     <!-- Incluir el header reutilizable -->
 
-    <!-- Resto del contenido -->
-
     <include
         android:id="@+id/include"
         layout="@layout/activity_header"
         tools:layout_editor_absoluteX="200dp"
         tools:layout_editor_absoluteY="101dp" />
 
+    <!-- Resto del contenido -->
 
     <TextView
         android:id="@+id/text_tittle_instrucciones"
@@ -60,7 +59,7 @@
 
     <Button
         android:id="@+id/btn_comenzar"
-        android:layout_width="255dp"
+        android:layout_width="wrap_content"
         android:layout_height="111dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
