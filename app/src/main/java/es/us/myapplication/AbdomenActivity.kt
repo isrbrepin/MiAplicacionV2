@@ -36,7 +36,6 @@ class AbdomenActivity : AppCompatActivity() {
             dialog.window?.attributes = layoutParams
 
             dialog.show()
-
         }
 
         val textInfo = findViewById<TextView>(R.id.text_abdomen)
@@ -55,7 +54,7 @@ class AbdomenActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#005B14")
+                ds.color = Color.parseColor("#ACF0B4")
             }
         }
 

@@ -13,12 +13,16 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import es.us.myapplication.ui.cirugiaabdominal.colon.ColonActivity
+import es.us.myapplication.ui.cirugiaabdominal.recto.RectoActivity
 
 class CancerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cancer)
+
         val btnOpenOverlay: Button = findViewById(R.id.btn_open_overlay)
 
         btnOpenOverlay.setOnClickListener {
@@ -55,7 +59,7 @@ class CancerActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#005B14")
+                ds.color = Color.parseColor("#ACF0B4")
             }
         }
 
@@ -68,7 +72,7 @@ class CancerActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#005B14")
+                ds.color = Color.parseColor("#ACF0B4")
             }
         }
 
@@ -90,5 +94,20 @@ class CancerActivity : AppCompatActivity() {
     fun openHelpActivity(view: View) {
         val intent = Intent(this, HelpActivity::class.java)
         startActivity(intent)
+    }
+
+    fun openColonActivity(view: View) {
+        val intent = Intent(this, ColonActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+
+    fun openRectoActivity(view: View) {
+        val intent = Intent(this, RectoActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }

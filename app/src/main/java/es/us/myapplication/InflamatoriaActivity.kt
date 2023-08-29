@@ -13,7 +13,11 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import es.us.myapplication.ui.cirugiaabdominal.colostomia.ColostomiaActivity
+import es.us.myapplication.ui.cirugiaabdominal.estoma.EstomaActivity
+import es.us.myapplication.ui.cirugiaabdominal.reseccion.ReseccionActivity
 
 class InflamatoriaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,7 +59,7 @@ class InflamatoriaActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#005B14")
+                ds.color = Color.parseColor("#ACF0B4")
             }
         }
 
@@ -68,7 +72,7 @@ class InflamatoriaActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#005B14")
+                ds.color = Color.parseColor("#ACF0B4")
             }
         }
 
@@ -85,5 +89,20 @@ class InflamatoriaActivity : AppCompatActivity() {
     private fun Int.dpToPx(): Int {
         val scale = resources.displayMetrics.density
         return (this * scale + 0.5f).toInt()
+    }
+    fun openEstomaActivity(view: View) {
+        val intent = Intent(this, EstomaActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+
+    fun openReseccionActivity(view: View) {
+        val intent = Intent(this, ReseccionActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+
     }
 }

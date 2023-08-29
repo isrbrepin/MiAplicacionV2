@@ -17,12 +17,12 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:elevation="20dp"
-        android:background="@drawable/pagactual_drawable"
+        android:background="@drawable/pagactual2_drawable"
         android:layout_height="60dp"
         android:text="@string/text_abdominal"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textColor="#005B14"
+        android:textColor="#ACF0B4"
         android:textStyle="bold" />
 
     <TextView

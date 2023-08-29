@@ -13,6 +13,79 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ui.suelopelvico.rectocele.InfoRectoceleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.rectocele.RectoceleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.prolapso.InfoProlapsoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.prolapso.ProlapsoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.incontinencia.InfoIncontinenciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.incontinencia.IncontinenciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.hemorroides.InfoHemorroidesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.hemorroides.HemorroidesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.fisura.InfoFisuraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.fisura.FisuraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.fistula.InfoFistulaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.fistula.FistulaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.reseccion.InfoReseccionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.reseccion.ReseccionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.estoma.InfoEstomaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.estoma.EstomaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.ilestomia.InfoIleostomiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.ilestomia.IleostomiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.colostomia.InfoColostomiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.colostomia.ColostomiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.recto.InfoRectoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.recto.RectoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.cirugiaabdominal.colon.InfoColonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.colon.ColonActivity"
+            android:exported="false" />
+        <activity
             android:name=".InflamatoriaActivity"
             android:exported="false" />
         <activity
@@ -22,37 +95,7 @@
             android:name=".AbdomenActivity"
             android:exported="false" />
         <activity
-            android:name=".SecondActivity"
-            android:exported="false" />
-        <activity
             android:name=".HelpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".OstomiaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AltaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PostoperatorioActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HospitalActivity"
-            android:exported="false" />
-        <activity
-            android:name=".IngresoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PreparacionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AnestesiaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RectoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ColonActivity"
             android:exported="false" />
         <activity
             android:name=".SueloActivity"
@@ -62,9 +105,6 @@
             android:exported="false" />
         <activity
             android:name=".CancerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PreoperatorioActivity"
             android:exported="false" />
         <activity
             android:name=".HeaderActivity"

@@ -13,7 +13,11 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import es.us.myapplication.ui.proctologia.fistula.FistulaActivity
+import es.us.myapplication.ui.proctologia.fisura.FisuraActivity
+import es.us.myapplication.ui.proctologia.hemorroides.HemorroidesActivity
 
 class ProctologiaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,7 +60,7 @@ class ProctologiaActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#005B14")
+                ds.color = Color.parseColor("#ACF0B4")
             }
         }
 
@@ -77,5 +81,23 @@ class ProctologiaActivity : AppCompatActivity() {
     fun openHelpActivity(view: View) {
         val intent = Intent(this, HelpActivity::class.java)
         startActivity(intent)
+    }
+    fun openHemorroidesActivity(view: View) {
+        val intent = Intent(this, HemorroidesActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+    fun openFisuraActivity(view: View) {
+        val intent = Intent(this, FisuraActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+    fun openFistulaActivity(view: View) {
+        val intent = Intent(this, FistulaActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }

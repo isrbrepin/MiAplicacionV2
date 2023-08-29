@@ -13,12 +13,20 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import es.us.myapplication.ui.proctologia.fistula.FistulaActivity
+import es.us.myapplication.ui.proctologia.fisura.FisuraActivity
+import es.us.myapplication.ui.proctologia.hemorroides.HemorroidesActivity
+import es.us.myapplication.ui.suelopelvico.incontinencia.IncontinenciaActivity
+import es.us.myapplication.ui.suelopelvico.prolapso.ProlapsoActivity
+import es.us.myapplication.ui.suelopelvico.rectocele.RectoceleActivity
 
 class SueloActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_suelo)
+
 
         val btnOpenOverlay: Button = findViewById(R.id.btn_open_overlay)
 
@@ -56,7 +64,7 @@ class SueloActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#005B14")
+                ds.color = Color.parseColor("#ACF0B4")
             }
         }
 
@@ -78,4 +86,24 @@ class SueloActivity : AppCompatActivity() {
         val intent = Intent(this, HelpActivity::class.java)
         startActivity(intent)
     }
+    fun openIncontinenciaActivity(view: View) {
+        val intent = Intent(this, IncontinenciaActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+    fun openRectoceleActivity(view: View) {
+        val intent = Intent(this, RectoceleActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+    fun openProlapsoActivity(view: View) {
+        val intent = Intent(this, ProlapsoActivity::class.java)
+        startActivity(intent)
+        showToast("Patología escogida correctamente")
+    }
+
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
 }

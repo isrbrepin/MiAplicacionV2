@@ -16,18 +16,18 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:elevation="20dp"
-        android:background="@drawable/pagactual_drawable"
+        android:background="@drawable/pagactual2_drawable"
         android:layout_height="60dp"
         android:text="@string/reconstrucci_n_del_tr_nsito"
         android:textAlignment="center"
         android:textSize="11sp"
-        android:textColor="#005B14"
+        android:textColor="#ACF0B4"
         android:textStyle="bold" />
 
     <!-- Resto del contenido -->
 
     <TextView
-        android:id="@+id/text_colon"
+        android:id="@+id/text_ileostomia"
         android:gravity="center"
         android:text="@string/ilestomia_lateral"
         android:background="@drawable/body_drawable"
@@ -41,11 +41,13 @@
         android:layout_marginStart="15dp"
         android:elevation="12dp"
         android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="openIleostomiaActivity"
         android:textStyle="bold" />
 
 
     <TextView
-        android:id="@+id/text_recto"
+        android:id="@+id/text_colostomia"
         android:layout_width="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
@@ -59,6 +61,8 @@
         android:textAlignment="center"
         android:textSize="25sp"
         android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="openColostomiaActivity"
         android:textStyle="bold" />
 
 </LinearLayout>

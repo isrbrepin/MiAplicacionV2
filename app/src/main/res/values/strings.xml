@@ -38,7 +38,7 @@
     <string name="enfermedad_inflamatoria_intestinal">Elija su patología > Cirugía abdominal > Enfermedad inflamatoria intestinal</string>
     <string name="polipo_colon">Polipo colon</string>
     <string name="polipo_recto">Polipo recto</string>
-    <string name="ilestomia_lateral">Cierre de ilestomia lateral</string>
+    <string name="ilestomia_lateral">Cierre de ileostomia lateral</string>
     <string name="cierre_de_colostomia_terminal">Cierre de colostomia terminal</string>
     <string name="text_reseccion">Resección intestinal</string>
     <string name="text_estoma">Creación de estoma</string>
@@ -54,5 +54,6 @@
     <string name="procto">Proctología</string>
     <string name="suelo">Suelo pélvico</string>
     <string name="abdominal">Cirugía abdominal</string>
+    <string name="info_patologia">Información sobre la patología</string>
 
 </resources>

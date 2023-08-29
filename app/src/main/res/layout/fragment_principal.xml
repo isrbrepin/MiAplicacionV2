@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="0dp"
+    tools:context=".principal.PrincipalFragment"
+    android:orientation="vertical">
+
+
+    <!-- Resto del contenido -->
+
+    <TextView
+        android:id="@+id/text_info_proceso"
+        android:gravity="center"
+        android:text="@string/text_info_proceso"
+        android:background="@drawable/body_drawable"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:elevation="12dp"
+        android:clickable="true"
+        android:onClick="openInfoActivity"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/text_preoperatorio"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:elevation="12dp"
+        android:background="@drawable/body_drawable"
+        android:layout_height="115dp"
+        android:text="@string/text_preoperatorio"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/text_postoperatorio"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:elevation="12dp"
+        android:background="@drawable/body_drawable"
+        android:layout_height="115dp"
+        android:text="@string/text_postoperatorio"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+</LinearLayout>
