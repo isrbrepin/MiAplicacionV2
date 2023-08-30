@@ -2,6 +2,7 @@ package es.us.myapplication.principal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import es.us.myapplication.R
 
 class PrincipalFragment : AppCompatActivity() {
@@ -10,4 +11,5 @@ class PrincipalFragment : AppCompatActivity() {
         setContentView(R.layout.fragment_principal)
 
     }
+
 }
