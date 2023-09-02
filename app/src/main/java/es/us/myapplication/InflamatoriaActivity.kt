@@ -59,7 +59,7 @@ class InflamatoriaActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#ACF0B4")
+                ds.color = Color.parseColor("#FFFFFF")
             }
         }
 
@@ -72,7 +72,7 @@ class InflamatoriaActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#ACF0B4")
+                ds.color = Color.parseColor("#FFFFFF")
             }
         }
 

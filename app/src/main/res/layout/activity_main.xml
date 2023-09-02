@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_marginHorizontal="0dp"
     android:layout_marginVertical="0dp"
-    android:background="#D7FACB"
+    android:background="#ECFDE6"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
@@ -49,11 +49,11 @@
         android:layout_gravity="center"
         android:background="@drawable/bordes_instrucciones"
         android:elevation="12dp"
-        android:paddingStart="8dp"
+        android:paddingStart="7dp"
         android:paddingEnd="8dp"
         android:text="@string/text_instrucciones"
         android:textColor="#000000"
-        android:textSize="12sp"
+        android:textSize="13sp"
         android:textStyle="bold"
          />
 

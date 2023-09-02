@@ -9,9 +9,6 @@ import android.view.WindowManager
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import es.us.myapplication.R
-import es.us.myapplication.ui.cirugiaabdominal.colon.PostoperatorioActivity
-import es.us.myapplication.ui.cirugiaabdominal.colon.PreoperatorioActivity
-import es.us.myapplication.ui.cirugiaabdominal.reseccion.InfoReseccionActivity
 
 class FistulaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,12 +46,12 @@ class FistulaActivity : AppCompatActivity() {
         val intent = Intent(this, InfoFistulaActivity::class.java)
         startActivity(intent)
     }
-    fun openPreoperatorioActivity(view: View) {
-        val intent = Intent(this, PreoperatorioActivity::class.java)
+    fun openPreoperatorioFistulaActivity(view: View) {
+        val intent = Intent(this, PreoperatorioFistulaActivity::class.java)
         startActivity(intent)
     }
-    fun openPostoperatorioActivity(view: View) {
-        val intent = Intent(this, PostoperatorioActivity::class.java)
+    fun openPostoperatorioFistulaActivity(view: View) {
+        val intent = Intent(this, PostoperatorioFistulaActivity::class.java)
         startActivity(intent)
     }
 }

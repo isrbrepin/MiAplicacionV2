@@ -9,9 +9,6 @@ import android.view.WindowManager
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import es.us.myapplication.R
-import es.us.myapplication.ui.cirugiaabdominal.colon.PostoperatorioActivity
-import es.us.myapplication.ui.cirugiaabdominal.colon.PreoperatorioActivity
-import es.us.myapplication.ui.suelopelvico.incontinencia.InfoIncontinenciaActivity
 
 class ProlapsoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,12 +46,12 @@ class ProlapsoActivity : AppCompatActivity() {
         val intent = Intent(this, InfoProlapsoActivity::class.java)
         startActivity(intent)
     }
-    fun openPreoperatorioActivity(view: View) {
-        val intent = Intent(this, PreoperatorioActivity::class.java)
+    fun openPreoperatorioProlapsoActivity(view: View) {
+        val intent = Intent(this, PreoperatorioProlapsoActivity::class.java)
         startActivity(intent)
     }
-    fun openPostoperatorioActivity(view: View) {
-        val intent = Intent(this, PostoperatorioActivity::class.java)
+    fun openPostoperatorioProlapsoActivity(view: View) {
+        val intent = Intent(this, PostoperatorioProlapsoActivity::class.java)
         startActivity(intent)
     }
 }

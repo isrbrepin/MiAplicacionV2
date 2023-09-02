@@ -9,9 +9,6 @@ import android.view.WindowManager
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import es.us.myapplication.R
-import es.us.myapplication.ui.cirugiaabdominal.colon.InfoColonActivity
-import es.us.myapplication.ui.cirugiaabdominal.colon.PostoperatorioActivity
-import es.us.myapplication.ui.cirugiaabdominal.colon.PreoperatorioActivity
 
 class RectoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,12 +46,12 @@ class RectoActivity : AppCompatActivity() {
         val intent = Intent(this, InfoRectoActivity::class.java)
         startActivity(intent)
     }
-    fun openPreoperatorioActivity(view: View) {
-        val intent = Intent(this, PreoperatorioActivity::class.java)
+    fun openPreoperatorioRectoActivity(view: View) {
+        val intent = Intent(this, PreoperatorioRectoActivity::class.java)
         startActivity(intent)
     }
-    fun openPostoperatorioActivity(view: View) {
-        val intent = Intent(this, PostoperatorioActivity::class.java)
+    fun openPostoperatorioRectoActivity(view: View) {
+        val intent = Intent(this, PostoperatorioRectoActivity::class.java)
         startActivity(intent)
     }
 }

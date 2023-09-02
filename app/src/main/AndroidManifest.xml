@@ -13,6 +13,78 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ui.suelopelvico.rectocele.PostoperatorioRectoceleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.rectocele.PreoperatorioRectoceleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.prolapso.PostoperatorioProlapsoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.prolapso.PreoperatorioProlapsoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.incontinencia.PostoperatorioIncontinenciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suelopelvico.incontinencia.PreoperatorioIncontinenciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.hemorroides.PostoperatorioHemorroidesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.hemorroides.PreoperatorioHemorroidesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.fisura.PostoperatorioFisuraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.fisura.PreoperatorioFisuraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.fistula.PostoperatorioFistulaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.proctologia.fistula.PreoperatorioFistulaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.reseccion.PostoperatorioReseccionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.reseccion.PreoperatorioReseccionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.recto.PostoperatorioRectoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.recto.PreoperatorioRectoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.ilestomia.PostoperatorioIleostomaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.ilestomia.PreoperatorioIleostomaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.estoma.PostoperatorioEstomaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.estoma.PreoperatorioEstomaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.colostomia.PostoperatorioColostomiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.colostomia.PreoperatorioColostomiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.colon.PostoperatorioColonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cirugiaabdominal.colon.PreoperatorioColonActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.suelopelvico.rectocele.PreparacionRectoceleActivity"
             android:exported="false" />
         <activity
@@ -229,12 +301,6 @@
             android:name=".ui.cirugiaabdominal.colon.AnestesiaColonActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.cirugiaabdominal.colon.PostoperatorioActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.cirugiaabdominal.colon.PreoperatorioActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.suelopelvico.rectocele.InfoRectoceleActivity"
             android:exported="false" />
         <activity
@@ -314,9 +380,6 @@
             android:exported="false" />
         <activity
             android:name=".AbdomenActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HelpActivity"
             android:exported="false" />
         <activity
             android:name=".SueloActivity"

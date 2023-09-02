@@ -64,7 +64,7 @@ class SueloActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#ACF0B4")
+                ds.color = Color.parseColor("#FFFFFF")
             }
         }
 
@@ -82,10 +82,7 @@ class SueloActivity : AppCompatActivity() {
         val scale = resources.displayMetrics.density
         return (this * scale + 0.5f).toInt()
     }
-    fun openHelpActivity(view: View) {
-        val intent = Intent(this, HelpActivity::class.java)
-        startActivity(intent)
-    }
+
     fun openIncontinenciaActivity(view: View) {
         val intent = Intent(this, IncontinenciaActivity::class.java)
         startActivity(intent)

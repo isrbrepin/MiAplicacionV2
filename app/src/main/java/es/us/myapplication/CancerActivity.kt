@@ -59,7 +59,7 @@ class CancerActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#ACF0B4")
+                ds.color = Color.parseColor("#FFFFFF")
             }
         }
 
@@ -72,7 +72,7 @@ class CancerActivity : AppCompatActivity() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = Color.parseColor("#ACF0B4")
+                ds.color = Color.parseColor("#FFFFFF")
             }
         }
 
@@ -90,10 +90,6 @@ class CancerActivity : AppCompatActivity() {
     private fun Int.dpToPx(): Int {
         val scale = resources.displayMetrics.density
         return (this * scale + 0.5f).toInt()
-    }
-    fun openHelpActivity(view: View) {
-        val intent = Intent(this, HelpActivity::class.java)
-        startActivity(intent)
     }
 
     fun openColonActivity(view: View) {

@@ -48,12 +48,12 @@ class ColonActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun openPreoperatorioActivity(view: View) {
-        val intent = Intent(this, PreoperatorioActivity::class.java)
+    fun openPreoperatorioColonActivity(view: View) {
+        val intent = Intent(this, PreoperatorioColonActivity::class.java)
         startActivity(intent)
     }
-    fun openPostoperatorioActivity(view: View) {
-        val intent = Intent(this, PostoperatorioActivity::class.java)
+    fun openPostoperatorioColonActivity(view: View) {
+        val intent = Intent(this, PostoperatorioColonActivity::class.java)
         startActivity(intent)
     }
 }

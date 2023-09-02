@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:layout_marginHorizontal="0dp"
     android:layout_marginVertical="0dp"
-    android:background="#D7FACB"
+    android:background="#ECFDE6"
     android:orientation="vertical">
 
   <!-- Incluir el header reutilizable -->
@@ -15,13 +15,12 @@
       android:layout_width="match_parent"
       android:layout_gravity="center"
       android:gravity="center"
-      android:elevation="20dp"
       android:background="@drawable/pagactual2_drawable"
       android:layout_height="60dp"
       android:text="@string/text_patologia"
       android:textAlignment="center"
       android:textSize="22sp"
-      android:textColor="#ACF0B4"
+      android:textColor="#FFFFFF"
       android:textStyle="bold" />
 
   <!-- Resto del contenido -->
@@ -32,7 +31,7 @@
       android:text="@string/abdominal"
       android:background="@drawable/body_drawable"
       android:textAlignment="center"
-      android:textSize="25sp"
+      android:textSize="22sp"
       android:layout_width="match_parent"
       android:layout_height="120dp"
       android:layout_gravity="center"
@@ -59,7 +58,7 @@
       android:layout_height="120dp"
       android:text="@string/procto"
       android:textAlignment="center"
-      android:textSize="25sp"
+      android:textSize="22sp"
       android:clickable="true"
       android:onClick="openProctologiaActivity"
       android:textColor="#000000"
@@ -79,7 +78,7 @@
       android:layout_height="120dp"
       android:text="@string/suelo"
       android:textAlignment="center"
-      android:textSize="25sp"
+      android:textSize="22sp"
       android:clickable="true"
       android:onClick="openSueloActivity"
       android:textColor="#000000"

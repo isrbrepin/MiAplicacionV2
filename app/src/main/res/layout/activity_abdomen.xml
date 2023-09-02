@@ -4,25 +4,36 @@
     android:layout_height="match_parent"
     android:layout_marginHorizontal="0dp"
     android:layout_marginVertical="0dp"
-    android:background="#D7FACB"
+    android:background="#ECFDE6"
     android:orientation="vertical">
 
     <!-- Incluir el header reutilizable -->
     <include layout="@layout/activity_header" />
 
     <!-- Resto del contenido -->
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="match_parent"
+        android:gravity="top|center"
+        android:background="@drawable/pagactual2_drawable"
+        android:layout_height="50dp"
+        android:text="@string/text_patologia"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/text_abdomen"
         android:layout_width="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
-        android:elevation="20dp"
-        android:background="@drawable/pagactual2_drawable"
-        android:layout_height="60dp"
+        android:background="@drawable/pagactual_drawable"
+        android:layout_height="50dp"
         android:text="@string/text_abdominal"
         android:textAlignment="center"
-        android:textSize="20sp"
-        android:textColor="#ACF0B4"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
         android:textStyle="bold" />
 
     <TextView
@@ -31,7 +42,7 @@
         android:text="@string/polipos_colorrectales"
         android:background="@drawable/body_drawable"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_gravity="center"
@@ -58,7 +69,7 @@
         android:layout_height="120dp"
         android:text="@string/transito"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:clickable="true"
         android:onClick="openTransitoActivity"
         android:textColor="#000000"
@@ -78,7 +89,7 @@
         android:layout_height="120dp"
         android:text="@string/inflamatoria"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:clickable="true"
         android:onClick="openInflamatoriaActivity"
         android:textColor="#000000"

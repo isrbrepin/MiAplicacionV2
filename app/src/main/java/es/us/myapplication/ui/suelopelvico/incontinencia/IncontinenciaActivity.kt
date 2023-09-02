@@ -9,9 +9,6 @@ import android.view.WindowManager
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import es.us.myapplication.R
-import es.us.myapplication.ui.cirugiaabdominal.colon.PostoperatorioActivity
-import es.us.myapplication.ui.cirugiaabdominal.colon.PreoperatorioActivity
-import es.us.myapplication.ui.proctologia.hemorroides.InfoHemorroidesActivity
 
 class IncontinenciaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,12 +46,12 @@ class IncontinenciaActivity : AppCompatActivity() {
         val intent = Intent(this, InfoIncontinenciaActivity::class.java)
         startActivity(intent)
     }
-    fun openPreoperatorioActivity(view: View) {
-        val intent = Intent(this, PreoperatorioActivity::class.java)
+    fun openPreoperatorioIncontinenciaActivity(view: View) {
+        val intent = Intent(this, PreoperatorioIncontinenciaActivity::class.java)
         startActivity(intent)
     }
-    fun openPostoperatorioActivity(view: View) {
-        val intent = Intent(this, PostoperatorioActivity::class.java)
+    fun openPostoperatorioIncontinenciaActivity(view: View) {
+        val intent = Intent(this, PostoperatorioIncontinenciaActivity::class.java)
         startActivity(intent)
     }
 }

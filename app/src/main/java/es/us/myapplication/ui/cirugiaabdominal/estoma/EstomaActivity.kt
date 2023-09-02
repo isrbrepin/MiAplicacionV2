@@ -9,9 +9,6 @@ import android.view.WindowManager
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import es.us.myapplication.R
-import es.us.myapplication.ui.cirugiaabdominal.colon.PostoperatorioActivity
-import es.us.myapplication.ui.cirugiaabdominal.colon.PreoperatorioActivity
-import es.us.myapplication.ui.cirugiaabdominal.colostomia.InfoColostomiaActivity
 
 class EstomaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,12 +46,12 @@ class EstomaActivity : AppCompatActivity() {
         val intent = Intent(this, InfoEstomaActivity::class.java)
         startActivity(intent)
     }
-    fun openPreoperatorioActivity(view: View) {
-        val intent = Intent(this, PreoperatorioActivity::class.java)
+    fun openPreoperatorioEstomaActivity(view: View) {
+        val intent = Intent(this, PreoperatorioEstomaActivity::class.java)
         startActivity(intent)
     }
-    fun openPostoperatorioActivity(view: View) {
-        val intent = Intent(this, PostoperatorioActivity::class.java)
+    fun openPostoperatorioEstomaActivity(view: View) {
+        val intent = Intent(this, PostoperatorioEstomaActivity::class.java)
         startActivity(intent)
     }
 }
